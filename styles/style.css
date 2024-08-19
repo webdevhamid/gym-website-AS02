@@ -58,6 +58,11 @@ body {
   width: 75%;
   margin: 0 auto;
 }
+.mobile-menu {
+  display: none;
+  color: var(--color-white);
+  font-size: 2rem;
+}
 /* Navbar  */
 header {
   background: var(--bg-hero);
@@ -119,7 +124,7 @@ header {
   font-family: Miama;
   src: url("../fonts/Miama.ttf");
 }
-.hero-title-cursive {
+.hero-title-shape {
   line-height: 2rem;
   font-family: Miama;
   font-size: 15rem;
@@ -185,4 +190,58 @@ header {
   top: 50%;
   left: 50%;
   transform: rotate(90deg) translate(-50%, 50%);
+}
+
+/* Mobile Responsive  */
+@media screen and (max-width: 576px) {
+  /* Global Styles  */
+  .btn {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+  /* Navbar  */
+  .container {
+    width: 90%;
+  }
+  .nav-list {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .hero {
+    flex-direction: column;
+    padding-top: 3rem;
+    /* align-items: start; */
+  }
+  .hero-card {
+    padding: 1.2rem 1.5rem;
+  }
+  .workout-card {
+    top: 7.2rem;
+    right: -1.7rem;
+  }
+  .workout-card h3 {
+    font-size: 2.5rem;
+  }
+  .video-card {
+    bottom: 24rem;
+    left: -1rem;
+  }
+  .video-card h3 {
+    font-size: 2rem;
+  }
+  .hero-title-shape {
+    font-size: 8rem;
+  }
+  .hero-title {
+    font-size: 3.6rem;
+  }
+  .hero-image {
+    margin-right: 0;
+    margin-top: 5rem;
+  }
+  .hero-buttons {
+    gap: 1rem;
+  }
 }
