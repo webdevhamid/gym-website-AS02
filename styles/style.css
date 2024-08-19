@@ -4,7 +4,7 @@
   --color-primary: rgb(230, 83, 60);
   --text-color: rgba(255, 255, 255, 0.5);
   --color-white: rgb(255, 255, 255);
-  --bg-hero: linear-gradient(45deg, rgb(17, 17, 17, 1), rgba(119, 119, 119, 0.3) 100%);
+  --bg-hero: linear-gradient(360deg, rgb(17, 17, 17, 1), rgba(119, 119, 119, 0.3) 100%);
   --bg-body: rgb(0, 0, 0);
   --bg-secondary: rgb(34, 34, 34);
   --title-font-size: 3rem;
@@ -18,6 +18,9 @@
   text-decoration: none;
   outline: 0;
   border: none;
+}
+img {
+  width: 100%;
 }
 html {
   font-size: 67.5%;
@@ -94,6 +97,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 10rem;
 }
 .hero-content {
   display: flex;
@@ -124,4 +128,61 @@ header {
 .hero-buttons {
   display: flex;
   gap: 2rem;
+}
+.hero-image {
+  position: relative;
+  margin-right: 15rem;
+}
+.hero-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  background: rgba(48, 48, 48, 0.54);
+  backdrop-filter: blur(20px);
+  padding: 1.8rem 2rem;
+  margin-bottom: 1rem;
+  position: absolute;
+}
+
+.hero-card h3 {
+  font-size: 4rem;
+  color: var(--color-white);
+}
+.hero-card p {
+  font-size: 1.3rem;
+  color: var(--text-color);
+}
+.workout-card {
+  top: 9.2rem;
+  right: -4.7rem;
+}
+.video-card {
+  bottom: 6rem;
+  left: -10rem;
+  display: flex;
+  align-items: center;
+}
+.video-card h3 {
+  font-size: 2.4rem;
+}
+.video-card-square {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+  margin-right: 1rem;
+
+  position: relative;
+}
+.video-card-square::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent var(--color-white) transparent;
+  border-width: 0px 8px 16px 8px;
+  top: 50%;
+  left: 50%;
+  transform: rotate(90deg) translate(-50%, 50%);
 }
