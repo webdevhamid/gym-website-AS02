@@ -308,7 +308,7 @@ header {
   }
   .habit-item {
     gap: 2rem;
-    padding: 0 8rem;
+    padding: 0 2rem;
   }
 
   .habit-item-title {
