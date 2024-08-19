@@ -354,4 +354,7 @@ header {
     margin-left: 0;
     max-width: 100%;
   }
+  .btn-run-extra {
+    width: 100%;
+  }
 }
