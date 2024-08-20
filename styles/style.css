@@ -538,4 +538,19 @@ ul.footer-list {
   .mobile-hide {
     display: none;
   }
+
+  /* Footer section  */
+
+  footer .section-description {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 2rem;
+  }
+  .footer-copyright .section-description {
+    text-align: left;
+  }
 }
