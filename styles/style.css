@@ -57,6 +57,10 @@ p {
 section {
   padding: 7rem 0;
 }
+option {
+  background: var(--bg-secondary);
+  color: var(--color-white);
+}
 
 /* Global Styles  */
 .btn {
@@ -492,7 +496,7 @@ ul.footer-list {
   }
   .habit-item {
     gap: 2rem;
-    padding: 0 2rem;
+    padding: 0px 10rem;
   }
 
   .habit-item-title {
