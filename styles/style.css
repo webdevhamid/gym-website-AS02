@@ -23,6 +23,9 @@
 img {
   width: 100%;
 }
+input {
+  width: 100%;
+}
 html {
   font-size: 67.5%;
 }
@@ -434,5 +437,46 @@ form.bmi-form .item-5 {
   }
   .btn-run-extra {
     width: 100%;
+  }
+  /* BMI section */
+
+  .bmi-container {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+  #bmi-top-section .section-title,
+  #bmi-top-section .section-description {
+    padding-left: 0;
+  }
+
+  form.bmi-form {
+    gap: 0.8rem;
+  }
+  h3.bmi-chart-title {
+    margin-bottom: 2rem;
+  }
+
+  .bmi-chart-title,
+  .bmi-form-title {
+    font-size: 1.8rem;
+  }
+
+  form.bmi-form .item-5 {
+    grid-column: 1 / span 2;
+  }
+  .bmi-input {
+    padding: 1.2rem 4rem 1.2rem 2rem;
+    border-radius: 0.8rem;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 1.6rem;
+    color: var(--text-color);
+  }
+  #bmi-sex-option .item-5 {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+  }
+  .btn-calculate {
+    width: 70%;
+    margin-top: 2rem;
   }
 }
