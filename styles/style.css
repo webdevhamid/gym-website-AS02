@@ -19,6 +19,7 @@
   outline: 0;
   border: none;
 }
+
 img {
   width: 100%;
 }
@@ -28,6 +29,7 @@ html {
 body {
   font-size: 1.6rem;
   background: var(--bg-body);
+  color: var(--text-color);
 }
 h1,
 h2,
@@ -68,7 +70,7 @@ section {
 }
 /* Shared Styles  */
 .container {
-  width: 75%;
+  width: 1140px;
   margin: 0 auto;
 }
 .mobile-menu {
@@ -156,13 +158,13 @@ header {
   font-size: 15rem;
   font-weight: normal;
 }
+
 .hero-buttons {
   display: flex;
   gap: 2rem;
 }
 .hero-image {
   position: relative;
-  margin-right: 15rem;
 }
 .hero-card {
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -267,6 +269,82 @@ header {
   border-radius: 1.8rem;
   overflow: hidden;
   margin-left: auto;
+}
+
+/* BMI section start  */
+#bmi-section {
+  background: var(--bg-secondary);
+}
+#bmi-top-section .section-title,
+#bmi-top-section .section-description {
+  text-align: left;
+  padding-left: 20rem;
+  margin-bottom: 0;
+}
+
+.bmi-chart-title,
+.bmi-form-title {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+p.bmi-form-description {
+  margin: 1.5rem 0 3rem 0;
+}
+
+h3.bmi-chart-title {
+  margin-bottom: 5rem;
+}
+p.bmi-form-description {
+  margin: 1.5rem 0 3rem 0;
+}
+table.bmi-table {
+  max-width: 300px;
+  width: 100%;
+}
+.bmi-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+
+.bmi-table,
+.bmi-table th,
+.bmi-table td {
+  border: 1px solid var(--text-color);
+  border-collapse: collapse;
+}
+.bmi-table th,
+.bmi-table td {
+  padding: 1rem;
+}
+.bmi-table th {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+form.bmi-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+}
+
+form.bmi-form .item-5 {
+  grid-column: 1 / span 2;
+}
+.bmi-input {
+  padding: 1.2rem 4rem 1.2rem 2rem;
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+#bmi-sex-option .item-5 {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+}
+.btn-calculate {
+  width: 70%;
+  margin-top: 2rem;
 }
 
 /* Mobile Responsive  */

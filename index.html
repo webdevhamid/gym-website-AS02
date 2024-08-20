@@ -132,6 +132,74 @@
         </div>
       </section>
       <!-- Run an extra banner end -->
+      <!-- BMI Calc section start  -->
+      <section id="bmi-top-section">
+        <div class="container">
+          <h2 class="section-title">BMI Calculator</h2>
+          <p class="section-description">
+            We believe fitness should be accessible to everyone, everywhere, regardless of income or
+            access to a gym.
+          </p>
+        </div>
+      </section>
+      <section id="bmi-section">
+        <div class="container bmi-container">
+          <div class="bmi-chart">
+            <h3 class="bmi-chart-title">BMI Calculator Chart</h3>
+            <table class="bmi-table">
+              <tr>
+                <th>BMI</th>
+                <th>Weight Status</th>
+              </tr>
+              <tr>
+                <td>Below 18.5</td>
+                <td>Underweight</td>
+              </tr>
+              <tr>
+                <td>18.5 - 24.9</td>
+                <td>Healthy</td>
+              </tr>
+              <tr>
+                <td>25.0 - 29.9</td>
+                <td>Overweight</td>
+              </tr>
+              <tr></tr>
+              <td>Below 18.5</td>
+              <td>Obese</td>
+              <tr></tr>
+            </table>
+          </div>
+          <div class="bmi-form">
+            <h3 class="bmi-form-title">Calculate Your BMI</h3>
+            <p class="bmi-form-description">
+              We believe fitness should be accessible to everyone, everywhere, regardless of income
+              or access to a gym.
+            </p>
+
+            <form class="bmi-form">
+              <input type="text" placeholder="Height/cm" class="bmi-input item-1" />
+              <input type="text" class="bmi-input item-2" placeholder="Weight/kg" />
+              <input type="text" placeholder="Age" class="bmi-input item-3" />
+
+              <select id="bmi-sex-option" class="item-4 bmi-input" name="bmi-sex-option">
+                <option value="" selected disabled hidden>Sex</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+
+              <select
+                name="bmi-activity-factor-option"
+                id="bmi-activity-factor-option"
+                class="item-5 bmi-input"
+              >
+                <option value="" selected disabled>Select an activity factor</option>
+              </select>
+              <input type="submit" value="Calculate" class="btn btn-primary btn-calculate item-6" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- BMI Calc section end  -->
     </main>
     <footer></footer>
   </body>
