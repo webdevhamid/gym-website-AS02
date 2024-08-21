@@ -393,6 +393,33 @@ form.bmi-form .item-5 {
   background: rgb(0, 0, 0, 0.1);
 }
 
+/* Unique section / Call to action section  */
+.call-to-action-container {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  align-items: center;
+}
+.call-to-action-right {
+  border-radius: 1.8rem;
+  overflow: hidden;
+  height: 35rem;
+}
+.action-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+}
+.action-form input,
+.action-form select {
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+}
+
 /* Footer section start */
 footer {
   background: var(--bg-secondary);
@@ -429,6 +456,7 @@ ul.footer-list {
   padding: 3rem 0;
   margin-top: 0;
 }
+
 /* Mobile Responsive  */
 @media screen and (max-width: 576px) {
   /* Global Styles  */
@@ -543,8 +571,16 @@ ul.footer-list {
     display: none;
   }
 
-  /* Footer section  */
+  /* Unique section / Call to action section  */
+  .call-to-action-container {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  #call-to-action .section-description {
+    margin-bottom: 2rem;
+  }
 
+  /* Footer section  */
   footer .section-description {
     text-align: left;
     margin-bottom: 2rem;
